@@ -1,0 +1,102 @@
+body{
+    background-color: rgb(3, 3, 95);
+}
+#login{
+    border: 2px solid black;
+    height: 400px;
+    position: absolute;
+    left: 800px;
+    top: 120px;
+    width: 400px;
+    background-color: white;
+}
+#quotes{
+    border: 2px solid black;
+    height: 400px;
+    position: absolute;
+    left: 150px;
+    top: 120px;
+    width: 650px;
+    background-color: rgb(117, 115, 241);
+}
+#name{
+    position: absolute;
+    left: 159px;
+    top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#para{
+    position: absolute;
+    left: 70px;
+    top: 110px;
+}
+#username{
+    position: absolute;
+    top: 160px;
+    left: 110px;
+    padding: 10px;
+}
+#password{
+    position: absolute;
+    top: 220px;
+    left: 110px;
+    padding: 10px;
+}
+#btn1{
+    position: absolute;
+    top: 280px;
+    left: 109px;
+    padding: 05px;
+    width: 194px;
+    background-color: rgb(12, 146, 12);
+    color: white;
+}
+#h2{
+    position: absolute;
+    top: 250px;
+    left: 20px;
+    border: 2px solid rgb(117, 115, 241);
+    width: 610px;
+    background-color: rgb(75, 99, 233);
+    font-weight: bold;
+    color: white;
+}
+#gen{
+    position: absolute;
+    top: 375px;
+    width: 650px;
+    background-color: green;
+    color: white;
+}
+#events{
+    position: absolute;
+    top: 300px;
+    left: 30px;
+    font-size: 25px;
+    width: 650px;
+    color: rgb(243, 6, 37);
+    font-style: italic;
+    font-weight: bold;
+}
+#img{
+    position: absolute;
+    left: 80px;
+    top: 24px;
+    border-radius: 10px;
+}
+#footer{
+    position: absolute;
+    top: 530px;
+    left: 150px;
+    font-size: 20px;
+    width: 650px;
+    color: rgb(240, 233, 234);
+    
+}
+#p1{
+    position: absolute;
+    top: -15px;
+    left: 220px;
+    color: rgb(232, 239, 240);
+    font-weight: bold;
+}
