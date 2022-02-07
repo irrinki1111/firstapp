@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    
+    <div id="login">
+        <h1 id="name">DEMO</h1>
+        <P1 id="para">LOREM IMPOSUM TEXT PLACE HERE</P1>
+        <form id="myform">
+        <input type="text" id="username" placeholder="Username" ><br>
+        <input type="password" id="password" placeholder="Password" ><br>
+        <input id="btn1" onclick="btn()" type="button" value="Submit">
+        </form>
+        <p id="con"></p>
+
+    </div>
+    <div id="quotes">
+        <h2 id="h2">Up Coming Events</h2>
+        <p id="events"></p>
+        <button id="gen" onclick="gen()">Generate Events Button</button>
+        <p id="p1">Thank you for visit our Application</p>
+        <img src="heart1.gif" id="img">
+        <p id="date"></p>
+        <p id="time" onfocus="time()"></p>
+
+    </div>
+    <footer id="footer">@Trade mark</footer>
+</body>
+<script>
+    const d = new Date();
+    let text = d.toLocaleDateString();
+    
+    document.getElementById("date").innerHTML = text;
+
+    setInterval(myTimer, 1000);
+    function myTimer() {
+    const date = new Date();
+    document.getElementById("time").innerHTML = date.toLocaleTimeString();
+    }
+    
+
+    function gen(){
+        var gen = document.getElementById("events").innerHTML = text + "No events to this date";
+    }
+    
+    function btn(){
+        var user = document.getElementById("username");
+        var pass = document.getElementById("password");
+
+        if(user.value == "" || pass.value == ""){
+        
+            var a = document.getElementById("con").innerHTML="Please Fill the above fields!!!!!!";
+           
+        }
+        
+        
+        else{
+            document.getElementById("con").innerHTML="Sucessfully Logined......";
+            document.getElementById('username').value = '';
+            document.getElementById('password').value = '';
+        }
+
+    }
+</script>
+</html>
